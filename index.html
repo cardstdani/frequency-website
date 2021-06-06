@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+         crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body style="background-color:#cee7eb">
+      <script src="script.js"></script>
+      <div width="10" style="margin-left:30px">
+         <label class="custom-field one">
+         <input id="inputFrequency" class="form-control" type="text" value="440" style="margin-top:00px" required style="outline-width: 0;">
+         <span class="placeholder" style="margin-top:0px">Frequency</span>
+         </label>
+      </div>
+      <div width="10" style="margin-left:30px;margin-top:15px">
+         <label class="custom-field one">
+         <input id="inputDuration" class="form-control" type="text" value="1000" style="margin-top:00px" required style="outline-width: 0;">
+         <span class="placeholder" style="margin-top:0px">Duration (ms)</span>
+         </label>
+      </div>
+      <div width="10" style="margin-left:30px;margin-top:15px">
+         <label class="custom-field one">
+         <input id="inputRepetition" class="form-control" type="text" value="1" style="margin-top:00px" required style="outline-width: 0;">
+         <span class="placeholder" style="margin-top:0px">Times played</span>
+         </label>
+      </div>
+      <div width="10" style="margin-left:30px;margin-top:15px">
+         <label class="custom-field one">
+         <input id="inputDelay" class="form-control" type="text" value="1500" style="margin-top:00px" required style="outline-width: 0;">
+         <span class="placeholder" style="margin-top:0px">Delay (ms)</span>
+         </label>
+      </div>
+      <div width="10" style="margin-left:30px;margin-top:15px">
+         <label class="custom-field one">
+         <input id="inputWord" class="form-control" type="text" value="Word" style="margin-top:00px" required style="outline-width: 0;">
+         <span class="placeholder" style="margin-top:0px">Word</span>
+         </label>
+      </div>
+      <div width="50" height="10" style="margin-left:30px;margin-top:30px;z-index:1000;position:relative">
+         <button type="button" class="btn btn-primary" style="margin-top:0px" onclick="sound()">
+         <strong>Sound</strong>
+         </button>
+      </div>
+      <div width="50" height="10" style="margin-left:30px;margin-top:30px;z-index:1000;position:relative">
+         <button type="button" class="btn btn-success" style="margin-top:0px" onclick="soundWord()">
+         <strong>Sound Word</strong>
+         </button>
+      </div>
+   </body>
+</html>
